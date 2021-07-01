@@ -2,7 +2,26 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "type": "rprompt",
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "trailing_diamond": "\uE0B4 ",
+          "leading_diamond": "\uE0B6",
+          "foreground": "#008BF8",
+          "background": "#424242",
+          "properties": {
+            "display_host": false,
+            "postfix": " \u276F",
+            "prefix": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
       "alignment": "right",
       "segments": [
         {
@@ -150,16 +169,20 @@
       "newline": true,
       "segments": [
         {
-          "type": "session",
-          "style": "diamond",
-          "trailing_diamond": "\uE0B4 ",
-          "leading_diamond": "\uE0B6",
-          "foreground": "#008BF8",
-          "background": "#424242",
+          "type": "root",
+          "style": "plain",
+          "foreground": "#FFD700",
           "properties": {
-            "display_host": false,
-            "postfix": " \u276F",
-            "prefix": ""
+            "root_icon": "⚡"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#f1184c",
+          "properties": {
+            "prefix": "",
+            "text": "🐱‍💻"
           }
         }
       ]
